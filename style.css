@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #17183B;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+p{
+    font-weight: 400;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.fundo-principal{
+    background: linear-gradient(rgba(85, 85, 98, 0.75),rgba(84, 84, 96, 0.75)), url(img/balance.png);
+    background-position: center;
+    padding-bottom: 10rem;
+    background-size: cover;
+    width: 100vw;
+}
+
+header{
+    width: 100%;
+    padding: 1.5rem;
+}
+
+header .container{
+    justify-content: flex-start;
+}
+
+.logo{
+    width: 15rem;
+    
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.destaque{
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+.destaque .container{
+    justify-content: flex-start;
+}
+
+.destaque-text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.destaque-text h2{
+    font-size: 5.2rem;
+    line-height: 1;
+    font-weight: 800;
+    color: #fff;
+}
+
+.destaque-text p{
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.whatsapp-button{
+    display: inline;
+    background-color: #AA8F66;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.beneficios{
+    width: 100vw;
+    margin-top: -8rem;
+}
+
+.beneficios .card-beneficio{
+    width: 30%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    border-radius: 5px;
+    background-color: #F9F9F9;
+    color: #17183B;
+    padding: 15px;
+}
+.card-beneficio {
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.card-beneficio p{
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.porque{
+    width: 100vw;
+    margin-top: -10rem;
+    background-color: #17183B;
+    padding-top: 16rem;
+    padding-bottom: 6rem;
+}
+
+.porque-img{
+    width: 40%;
+    padding: 2rem;
+}
+
+.porque-img img{
+    width: 100%;
+    border-radius: 0 20px 0 20px;
+    border: 1px solid rgba(0, 0, 0, 0.239);
+}
+
+.porque-text{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    color: #fff;
+    gap:2rem;
+}
+
+
+.porque-text p{
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+.diferencial{
+    width: 100vw;
+    background-color: #F9F9F9;
+    color: #17183B;
+    padding: 6rem 0;
+}
+
+.diferencial .container{
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.diferencial-cards{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.d-card{
+    width: 30%;
+    text-align: center;
+    padding: 15px;
+    border-radius: 0 15px 0 15px;
+    background-color: #17183B;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.d-card h3{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.onde-encontrar{
+    width: 100vw;
+    padding:6rem 0;
+    background-color: #17183B;
+    color: #fff;
+}
+
+.onde-encontrar .container{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.onde-text{
+    display: flex;
+    gap: 2rem;
+}
+
+.onde-text p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.onde-text p.space{
+    margin-left: 20px;
+}
+
+footer{
+    width: 100vw;
+    padding: 1.5rem;
+    background-color: #17183B;
+}
+
+footer .logo{
+    text-align: center;
+}
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .container{
+        width: 95%;
+        flex-wrap: wrap;
+    }
+
+    .destaque-text{
+        width: 100%;
+        text-align: center;
+    }
+
+    .destaque-text h2{
+        font-size: 4rem;
+    }
+    .beneficios .card-beneficio{
+        width: 100%;
+    }
+
+    .porque-img{
+        width: 100%;
+    }
+    .porque-text{
+        width: 100%;
+        text-align: center;
+    }
+    .diferencial{
+        text-align: center;
+    }
+    .diferencial-cards{
+        flex-wrap: wrap;
+    }
+    .d-card{
+        width: 100%;
+    }
+    .onde-text{
+        flex-wrap: wrap;
+    }
+    .endereco{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width:400px){
+    html{
+        font-size: 50%;
+    }
+}
